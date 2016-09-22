@@ -1,0 +1,19 @@
+a, input {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.right {
+  float: right;
+  margin-top: 30px;
+  margin-right: 15px;
+}
+
+a {
+  color: #00458c;
+}
+
+img {
+  margin: 5px;
+  margin-bottom: 0px;
+}
