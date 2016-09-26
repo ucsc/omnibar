@@ -8,23 +8,22 @@
 <body>
   <div class="omninav">
     <div class="inner">
-      <a href="http://www.ucsc.edu/">
+      <a href="http://www.ucsc.edu/" class="logo">
         <img src="http://www.ucsc.edu/identity/images/ucsc-stack.jpg?t=0" height="70">
       </a>
       <ul id="menuItems" class="menuNav">
-          
-          <form id="search" class="right" onSubmit="subButton(this.input.value)">
-            <input type="text" maxlength="120" name="input" placeholder="Search UCSC" id="searchText" onKeyUp="checkSubmit()">
-          </form>
+        <li><a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG" class="right" >MyUCSC</a></li>
+        <li><a href="http://www.ucsc.edu/tools/people.html" class="right">People</a></li>
         <li><a href="http://www.ucsc.edu/tools/calendars.html" class="right">Calendars</a></li>
         <li><a href="http://www.ucsc.edu/tools/azindex.html" class="right">A-Z Index</a></li>
-        <li><a href="http://www.ucsc.edu/tools/people.html" class="right">People</a></li>
-        <li><a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG" class="right">MyUCSC</a></li>
+        <form id="search" class="right" onSubmit="subButton(this.input.value)">
+          <input type="text" maxlength="120" name="input" placeholder="Search UCSC" id="searchText" onKeyUp="checkSubmit()">
+        </form>
         <li class="icon">
-          <a href="" onclick="expand()">☰</a>
+          <a href="javascript:void(0)" onclick="expand()">☰</a>
         </li>
       </ul>
-      <hr>
     </div>
+    <hr>
   </div>
 </body>
