@@ -11,18 +11,16 @@
       <a href="http://www.ucsc.edu/" class="logo">
         <img src="http://www.ucsc.edu/identity/images/ucsc-stack.jpg?t=0" height="70">
       </a>
+      <a href="javascript:void(0)" onclick="expand()" class="icon">☰</a>
       <ul id="menuItems" class="menuNav">
         <li><a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG" class="right" >MyUCSC</a></li>
         <li><a href="http://www.ucsc.edu/tools/people.html" class="right">People</a></li>
         <li><a href="http://www.ucsc.edu/tools/calendars.html" class="right">Calendars</a></li>
         <li><a href="http://www.ucsc.edu/tools/azindex.html" class="right">A-Z Index</a></li>
-        <li class="icon">
-          <a href="javascript:void(0)" onclick="expand()">☰</a>
-        </li>
-        <form id="search" class="right" onSubmit="subButton(this.input.value)">
-          <input type="text" maxlength="120" name="input" placeholder="Search UCSC" id="searchText" onKeyUp="checkSubmit()">
-        </form>
       </ul>
+      <form id="search" class="right" onSubmit="subButton(this.input.value)">
+        <input type="text" maxlength="120" name="input" placeholder="Search UCSC" id="searchText" onKeyUp="checkSubmit()">
+      </form>
     </div>
     <hr>
   </div>

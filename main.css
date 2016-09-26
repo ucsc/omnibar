@@ -25,24 +25,22 @@ li, form {
 	flex-grow: 4;
 }
 
-.icon { display: none; }
+.icon { 
+	display: none;
+	text-decoration: none;
+	font-size: 25px; 
+}
 
 @media screen and (max-width: 830px) {
+	ul.menuNav { padding: 5px; }
 	ul.menuNav li { display: none; }
-	ul.menuNav li.icon {
-		float: left;
-		display: inline-block;
-		padding-right: 15px;
-	}
-
-	ul.menuNav li.icon a {
-		text-decoration: none;
-		font-size: 20px;
-	}
+	.icon { display: inline; }
 
 	ul.menuNav.responsive li {
 		float: none;
 		display: inline;
+		padding-right: 0px;
+		padding-bottom: 10px;
 	}
 	ul.menuNav.responsive li a {
 		display: block;
