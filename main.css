@@ -5,18 +5,14 @@
 	align-items: center;
 }
 
-a {
-  color: #00458c;
-}
+a { color: #00458c; }
 
 a, input {
   font-family: Arial;
   font-size: 17px;
 }
 
-ul {
-	list-style-type: none;
-}
+ul { list-style-type: none; }
 
 li, form {
 	display: inline;
@@ -29,26 +25,21 @@ li, form {
 	flex-grow: 4;
 }
 
-ul li.icon {
-	display: none;
-}
+.icon { display: none; }
 
 @media screen and (max-width: 830px) {
-	ul.menuNav li {
-		display: none;
-	}
+	ul.menuNav li { display: none; }
 	ul.menuNav li.icon {
 		float: left;
 		display: inline-block;
+		padding-right: 15px;
 	}
-	ul.menuNav.responsive {
-		position relative
+
+	ul.menuNav li.icon a {
+		text-decoration: none;
+		font-size: 20px;
 	}
-	ul.menuNav.responsive.li.icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
+
 	ul.menuNav.responsive li {
 		float: none;
 		display: inline;
