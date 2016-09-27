@@ -4,6 +4,10 @@
 	justify-content: flex-end;
 	align-items: center;
 	border-bottom: 3px solid black;
+	max-width: 64em;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 a { color: #00458c; }
@@ -43,6 +47,7 @@ li, form {
 @media screen and (max-width: 940px) {
 	img {
 		max-width: 80%;
+		min-width: 50px;
 		max-height: 70px;
 		height: auto;
 	}
