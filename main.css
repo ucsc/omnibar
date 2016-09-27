@@ -38,12 +38,6 @@ li, form {
 
 	ul.menuNav.responsive li {
 		float: none;
-		display: inline;
-		padding-right: 0px;
-		padding-bottom: 10px;
-	}
-	ul.menuNav.responsive li a {
 		display: block;
-		text-align: left;
 	}
 }
