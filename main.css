@@ -28,16 +28,27 @@ li, form {
 .icon { 
 	display: none;
 	text-decoration: none;
-	font-size: 25px; 
+	font-size: 30px; 
+	position: absolute;
+	right: 220px;
+	padding-bottom: 4px;
 }
 
 @media screen and (max-width: 830px) {
-	ul.menuNav { padding: 5px; }
+	ul.menuNav { padding: 3px; }
 	ul.menuNav li { display: none; }
-	.icon { display: inline; }
+	.icon { display: block; }
+
+	ul.menuNav.responsive {
+		padding: 0px;
+		margin: 0px;
+		position: relative;
+		top: 70px;
+		left: 45px;
+	}
 
 	ul.menuNav.responsive li {
-		float: none;
+		padding-right: 0px;
 		display: block;
 	}
 }
