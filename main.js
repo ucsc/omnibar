@@ -23,3 +23,11 @@ function expand() {
 		inner.style.paddingBottom = "0px";
 	}
 }
+
+// When window resizes, check to see if extra padding is still on the bottom of the omnibar
+function checkPadding() {
+	var inner = document.getElementById("inner");
+	if (window.outerWidth > 940) {
+		inner.style.paddingBottom = "0px";
+	}
+}

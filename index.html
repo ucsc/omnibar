@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script src="main.js"></script>
+  <script href="javascript:void(0)" src="main.js"></script>
 </head>
-<body>
+<body onresize="checkPadding()">
   <div class="omninav">
     <div class="inner" id="inner">
       <a href="http://www.ucsc.edu/" class="logo">
         <img src="http://www.ucsc.edu/identity/images/ucsc-stack.jpg?t=0" height="70px">
       </a>
-      <a href="javascript:void(0)" onclick="expand()" class="icon">☰</a>
+      <a onclick="expand()" class="icon">☰</a>
       <ul id="menuItems" class="menuNav">
         <li>
           <a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG" class="right" >
