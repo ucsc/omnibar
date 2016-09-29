@@ -70,5 +70,9 @@ form {
           padding: 10px; }
       ul.menuNav.responsive li.divider {
         display: none; } }
+@media screen and (max-width: 940px) and (max-width: 550px) {
+  li {
+    font-size: 0.5em;
+    font-weight: bold; } }
 
 /*# sourceMappingURL=main.css.map */
