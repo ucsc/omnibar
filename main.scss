@@ -49,35 +49,31 @@ form {
 .mobileNav { display: inline; }
 
 @media screen and (max-width: 940px) {
-	align-items: flex-start;
 	img {
-		max-width: 80%;
 		min-width: 50px;
 		max-height: 70px;
-		min-height: 40px;
 		height: auto;
 	}
-	ul.menuNav { 
-		padding: 3px; 
-		align-self: flex-end;
-		li { display: none; }
-	}
+	ul.menuNav li { display: none; }
  
 	.icon { display: block; }
 
 	ul.menuNav.responsive {	
-		& li {
-			padding-right: 25%;
-			padding-top: 15%;
+		position: absolute;
+		top: 85px;
+		li {
+			padding-right: 40px;
 			display: inline;
 			a {
 				text-decoration: none;
+				.mobileNav {
+					border: 2px solid black;
+					border-radius: 7px;
+					padding: 10px;
+				}
 			}
 			&.divider { 
-				display: none; 
-			}
-			&.mobileNav {
-				border: 2px solid black;
+				display: none;
 			}
 		}
 	}

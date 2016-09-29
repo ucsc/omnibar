@@ -14,9 +14,12 @@ function checkSubmit() {
 // When click the menu on a small screen, adds "responsive" class so that menu items are revealed
 function expand() {
 	var nav = document.getElementById("menuItems");
+	var inner = document.getElementById("inner");
 	if (nav.className === "menuNav") {
 		nav.className += " responsive";
+		inner.style.paddingBottom = "55px";
 	} else {
-		nav.className = "menuNav"
+		nav.className = "menuNav";
+		inner.style.paddingBottom = "0px";
 	}
 }

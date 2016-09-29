@@ -45,32 +45,30 @@ form {
   display: inline; }
 
 @media screen and (max-width: 940px) {
-  align-items: flex-start;
   img {
-    max-width: 80%;
     min-width: 50px;
     max-height: 70px;
-    min-height: 40px;
     height: auto; }
 
-  ul.menuNav {
-    padding: 3px;
-    align-self: flex-end; }
-    ul.menuNav li {
-      display: none; }
+  ul.menuNav li {
+    display: none; }
 
   .icon {
     display: block; }
 
-  ul.menuNav.responsive li {
-    padding-right: 25%;
-    padding-top: 15%;
-    display: inline; }
-    ul.menuNav.responsive li a {
-      text-decoration: none; }
-    ul.menuNav.responsive li.divider {
-      display: none; }
-    ul.menuNav.responsive li.mobileNav {
-      border: 2px solid black; } }
+  ul.menuNav.responsive {
+    position: absolute;
+    top: 85px; }
+    ul.menuNav.responsive li {
+      padding-right: 40px;
+      display: inline; }
+      ul.menuNav.responsive li a {
+        text-decoration: none; }
+        ul.menuNav.responsive li a .mobileNav {
+          border: 2px solid black;
+          border-radius: 7px;
+          padding: 10px; }
+      ul.menuNav.responsive li.divider {
+        display: none; } }
 
 /*# sourceMappingURL=main.css.map */
