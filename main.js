@@ -29,5 +29,7 @@ function checkPadding() {
 	var inner = document.getElementById("inner");
 	if (window.outerWidth > 940) {
 		inner.style.paddingBottom = "0px";
+	} else {
+		inner.style.paddingBottom = "55px";
 	}
 }
