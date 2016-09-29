@@ -28,6 +28,10 @@ li, form {
 	padding-right: 15px;
 }
 
+form {
+	margin-right: 10px;
+}
+
 .logo {
 	margin: 5px;
 	margin-bottom: 0px;
@@ -39,13 +43,13 @@ li, form {
 	text-decoration: none;
 	font-size: 30px; 
 	position: absolute;
-	right: 220px;
-	padding-bottom: 4px;
+	right: 0px;
 }
 
 .mobileNav { display: inline; }
 
 @media screen and (max-width: 940px) {
+	align-items: flex-start;
 	img {
 		max-width: 80%;
 		min-width: 50px;
@@ -55,27 +59,25 @@ li, form {
 	}
 	ul.menuNav { 
 		padding: 3px; 
+		align-self: flex-end;
 		li { display: none; }
 	}
  
 	.icon { display: block; }
 
-	ul.menuNav.responsive {
-		background-color: white;
-		padding: 5px;
-		padding-top: 0px;
-		margin: 0px;
-		position: relative;
-		top: 70px;
-		left: 57px;
-		border: 2px solid black;
-		border-top: 0;
-
+	ul.menuNav.responsive {	
 		& li {
-			padding-right: 0px;
-			display: block;
+			padding-right: 25%;
+			padding-top: 15%;
+			display: inline;
+			a {
+				text-decoration: none;
+			}
 			&.divider { 
 				display: none; 
+			}
+			&.mobileNav {
+				border: 2px solid black;
 			}
 		}
 	}
