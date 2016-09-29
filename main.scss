@@ -50,6 +50,7 @@ li, form {
 		max-width: 80%;
 		min-width: 50px;
 		max-height: 70px;
+		min-height: 40px;
 		height: auto;
 	}
 	ul.menuNav { 
@@ -70,10 +71,12 @@ li, form {
 		border: 2px solid black;
 		border-top: 0;
 
-		li {
+		& li {
 			padding-right: 0px;
 			display: block;
-			.divider { display: none; }
+			&.divider { 
+				display: none; 
+			}
 		}
 	}
 }
