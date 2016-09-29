@@ -39,6 +39,9 @@ li, form {
   right: 220px;
   padding-bottom: 4px; }
 
+.mobileNav {
+  display: inline; }
+
 @media screen and (max-width: 940px) {
   img {
     max-width: 80%;

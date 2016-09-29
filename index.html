@@ -13,13 +13,29 @@
       </a>
       <a href="javascript:void(0)" onclick="expand()" class="icon">☰</a>
       <ul id="menuItems" class="menuNav">
-        <li><a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG" class="right" >MyUCSC</a></li>
+        <li>
+          <a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG" class="right" >
+            <div class="mobileNav">MyUCSC</div>
+          </a>
+        </li>
         <li class="divider"> | </li>
-        <li><a href="http://www.ucsc.edu/tools/people.html" class="right">People</a></li>
+        <li>
+          <a href="http://www.ucsc.edu/tools/people.html" class="right">
+            <div class="mobileNav">People</div>
+          </a>
+        </li>
         <li class="divider"> | </li>
-        <li><a href="http://www.ucsc.edu/tools/calendars.html" class="right">Calendars</a></li>
+        <li>
+          <a href="http://www.ucsc.edu/tools/calendars.html" class="right">
+            <div class="mobileNav">Calendars</div>
+          </a>
+        </li>
         <li class="divider"> | </li>
-        <li><a href="http://www.ucsc.edu/tools/azindex.html" class="right">A-Z Index</a></li>
+        <li>
+          <a href="http://www.ucsc.edu/tools/azindex.html" class="right">
+            <div class="mobileNav">A-Z Index</div>
+          </a>
+        </li>
       </ul>
       <form id="search" class="right" onSubmit="subButton(this.input.value)">
         <input type="text" maxlength="120" name="input" placeholder="Search UCSC" id="searchText" onKeyUp="checkSubmit()">
