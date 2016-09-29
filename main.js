@@ -30,7 +30,4 @@ function checkPadding() {
 	if (window.outerWidth > 940) {
 		inner.style.paddingBottom = "0px";
 	}
-	else {
-		expand();
-	}
 }
