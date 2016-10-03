@@ -13,8 +13,8 @@ function checkSubmit() {
 
 // When click the menu on a small screen, adds "responsive" class so that menu items are revealed
 function expand() {
-	var nav = document.getElementById("menuItems");
 	var inner = document.getElementById("inner");
+	var nav = document.getElementById("menuItems");
 	if (nav.className === "menuNav") {
 		nav.className += " responsive";
 		inner.style.paddingBottom = "55px";
@@ -27,9 +27,14 @@ function expand() {
 // When window resizes, check to see if extra padding is still on the bottom of the omnibar
 function checkPadding() {
 	var inner = document.getElementById("inner");
+	var nav = document.getElementById("menuItems");
 	if (window.outerWidth > 940) {
 		inner.style.paddingBottom = "0px";
-	} else {
-		inner.style.paddingBottom = "55px";
+	} else if (window.outerWidth < 940) {
+		if (nav.className === "menuNav responsive") {
+			inner.style.paddingBottom = "55px"
+		} else {
+			inner.style.paddingBottom = "0px";
+		}
 	}
 }

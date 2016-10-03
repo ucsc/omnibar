@@ -1,7 +1,5 @@
 .inner {
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
 	align-items: center;
 	border-bottom: 3px solid black;
 	max-width: 64em;
@@ -23,24 +21,17 @@ li, input {
 
 ul { list-style-type: none; }
 
-li, form {
+li {
 	display: inline;
 	padding-right: 15px;
 }
 
-form {
-	margin-right: 15px;
-}
+form { padding-right: 30px; }
 
-.logo {
-	margin: 5px;
-	margin-bottom: 0px;
-	flex-grow: 4;
-}
+.logo { flex-grow: 1; }
 
 .icon { 
 	display: none;
-	text-decoration: none;
 	font-size: 30px; 
 	position: absolute;
 	right: 5px;
@@ -54,10 +45,8 @@ form {
 		max-height: 70px;
 		height: auto;
 	}
-	ul.menuNav li { display: none; }
- 
 	.icon { display: block; }
-
+	ul.menuNav li { display: none; }
 	ul.menuNav.responsive {	
 		position: absolute;
 		top: 85px;
@@ -72,9 +61,7 @@ form {
 					padding: 10px;
 				}
 			}
-			&.divider { 
-				display: none;
-			}
+			&.divider { display: none; }
 		}
 	}
 	@media screen and (max-width: 550px) {
@@ -82,5 +69,11 @@ form {
 			font-size: 0.5em;
 			font-weight: bold;
 		}
+		input {
+			position: absolute;
+			right: 35px;
+			top: 20px;
+		}
+		img { width: 35%; }
 	}
 }
