@@ -39,7 +39,7 @@ form { padding-right: 30px; }
 
 .mobileNav { display: inline; }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 940px){
 	img {
 		min-width: 50px;
 		max-height: 70px;
@@ -64,7 +64,7 @@ form { padding-right: 30px; }
 			&.divider { display: none; }
 		}
 	}
-	@media screen and (max-width: 550px) {
+	@media screen and (max-width: 550px){
 		li {
 			font-size: 0.5em;
 			font-weight: bold;
