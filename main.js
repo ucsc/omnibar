@@ -13,6 +13,7 @@ function checkSubmit() {
 
 // When click the menu on a small screen, adds "responsive" class so that menu items are revealed
 function expand() {
+	checkPadding();
 	var nav = document.getElementById("menuItems");
 	var inner = document.getElementById("inner");
 	if (nav.className === "menuNav") {
@@ -29,7 +30,11 @@ function checkPadding() {
 	var inner = document.getElementById("inner");
 	if (window.outerWidth > 940) {
 		inner.style.paddingBottom = "0px";
-	} else {
-		inner.style.paddingBottom = "55px";
+	} else if (window.outerWidth < 940) {
+		if (document.getElementById("responsive")){
+			inner.style.paddingBottom = "55px";
+		} else {
+			inner.style.paddingBottom= "0px";
+		}
 	}
 }
