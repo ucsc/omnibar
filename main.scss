@@ -41,7 +41,6 @@ form { padding-right: 30px; }
 
 @media screen and (max-width: 940px){
 	img {
-		min-width: 50px;
 		max-height: 70px;
 		height: auto;
 	}
@@ -64,16 +63,18 @@ form { padding-right: 30px; }
 			&.divider { display: none; }
 		}
 	}
-	@media screen and (max-width: 550px){
-		li {
-			font-size: 0.5em;
-			font-weight: bold;
-		}
-		input {
-			position: absolute;
-			right: 35px;
-			top: 20px;
-		}
-		img { width: 35%; }
+}
+
+@media screen and (max-width: 550px){
+	li {
+		font-size: 0.5em;
+		font-weight: bold;
 	}
+	input {
+		position: absolute;
+		right: 35px;
+		top: 20px;
+	}
+	img { width: 35%; }
+	ul.menuNav.responsive { top: 65px; }
 }
