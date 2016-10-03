@@ -41,7 +41,6 @@ form {
 
 @media screen and (max-width: 940px) {
   img {
-    min-width: 50px;
     max-height: 70px;
     height: auto; }
 
@@ -65,7 +64,7 @@ form {
           padding: 10px; }
       ul.menuNav.responsive li.divider {
         display: none; } }
-@media screen and (max-width: 940px) and (max-width: 550px) {
+@media screen and (max-width: 550px) {
   li {
     font-size: 0.5em;
     font-weight: bold; }
@@ -76,6 +75,9 @@ form {
     top: 20px; }
 
   img {
-    width: 35%; } }
+    width: 35%; }
+
+  ul.menuNav.responsive {
+    top: 65px; } }
 
 /*# sourceMappingURL=main.css.map */
