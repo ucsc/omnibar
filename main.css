@@ -25,7 +25,7 @@ li {
   padding-right: 15px; }
 
 form {
-  margin-right: 30px; }
+  padding-right: 30px; }
 
 .logo {
   flex-grow: 1; }
@@ -45,11 +45,11 @@ form {
     max-height: 70px;
     height: auto; }
 
-  ul.menuNav li {
-    display: none; }
-
   .icon {
     display: block; }
+
+  ul.menuNav li {
+    display: none; }
 
   ul.menuNav.responsive {
     position: absolute;
@@ -68,6 +68,11 @@ form {
 @media screen and (max-width: 940px) and (max-width: 550px) {
   li {
     font-size: 0.5em;
-    font-weight: bold; } }
+    font-weight: bold; }
+
+  input {
+    position: absolute;
+    right: 35px;
+    top: 35px; } }
 
 /*# sourceMappingURL=main.css.map */
