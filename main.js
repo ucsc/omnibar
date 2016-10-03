@@ -31,6 +31,10 @@ function checkPadding() {
 	if (window.outerWidth > 940) {
 		inner.style.paddingBottom = "0px";
 	} else if (window.outerWidth < 940) {
-		expand();
+		if (nav.className === "menuNav responsive") {
+			inner.style.paddingBottom = "55px"
+		} else {
+			inner.style.paddingBottom = "0px";
+		}
 	}
 }
