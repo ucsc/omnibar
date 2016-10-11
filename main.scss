@@ -1,4 +1,4 @@
-// Styles for preview page
+/*Styles for preview page*/
 body {
 	padding: 0;
 	margin: 0;
@@ -13,7 +13,7 @@ body {
 	padding: 1em .5em;
 }
 
-// Omnibar styles
+/* Omnibar styles*/
 .omnibar {
 	background-color: #ededed;
 	border-bottom: 2px solid #545454;
@@ -22,19 +22,78 @@ body {
 	max-width: 64em;
 	margin-left: auto;
 	margin-right: auto;
-
-
-.inner {
-	display: flex;
-	align-items: center;	
+	a { color: #00458c;}
 }
 
-a { color: #00458c; }
+@media screen and (min-width: 300px){
+	.omnibar {
+		.inner {
+			display: flex;
+			align-items: center;	
+		}
+		
+		li {
+			font-family: Arial;
+			font-size: 0.5em;
+			font-weight: bold;
+		}
 
-li, input {
-  font-family: Arial;
-  font-size: 17px;
+		input {
+			font-size: 17px;
+			position: absolute;
+			right: 35px;
+			top: 20px;
+		}
+		
+
+		.logo { 
+			background: transparent no-repeat left top;
+			background-image: url(http://static.ucsc.edu/_responsive/images/logos/ucsc-logotype.svg);
+			background-size: contain;
+			max-width: 260px;
+			width: 35%;
+			height: 70px;
+			flex-grow: 1; 
+		}
+
+		.icon { display: block; }
+		ul.menuNav li { display: none; }
+		ul.menuNav.responsive {	
+			position: absolute;
+			top: 65px;
+			li {
+				padding-right: 40px;
+				display: inline;
+				border: none;
+				a {
+					text-decoration: none;
+					.mobileNav {
+						border: 2px solid black;
+						border-radius: 7px;
+						padding: 10px;
+					}
+				}
+		}
+	}
+	}
 }
+
+@media screen and (min-width: 550px) {
+	.omnibar {
+		li, input {
+			font-family: Arial;
+			font-size: 17px;
+		}
+		.logo { width: 100%; }
+		ul.menuNav.responsive { top: 85px; }
+	}
+}
+
+
+
+
+/*
+
 
 ul { 
 	list-style-type: none; 
@@ -52,15 +111,7 @@ li:last-child { border: none;}
 
 form { padding-right: 30px; }
 
-.logo { 
-	background: transparent no-repeat left top;
-	background-image: url(http://static.ucsc.edu/_responsive/images/logos/ucsc-logotype.svg);
-	background-size: contain;
-	max-width: 260px;
-	width: 100%;
-	height: 70px;
-	flex-grow: 1; 
-}
+
 
 .icon { 
 	display: none;
@@ -76,39 +127,9 @@ form { padding-right: 30px; }
 		max-height: 70px;
 		height: auto;
 	}
-	.icon { display: block; }
-	ul.menuNav li { display: none; }
-	ul.menuNav.responsive {	
-		position: absolute;
-		top: 85px;
-		li {
-			padding-right: 40px;
-			display: inline;
-			border: none;
-			a {
-				text-decoration: none;
-				.mobileNav {
-					border: 2px solid black;
-					border-radius: 7px;
-					padding: 10px;
-				}
-			}
-		}
-	}
+	
 }
 
-@media screen and (max-width: 550px){
-	li {
-		font-size: 0.5em;
-		font-weight: bold;
-	}
-	input {
-		position: absolute;
-		right: 35px;
-		top: 20px;
-	}
-	img { width: 35%; }
-	ul.menuNav.responsive { top: 65px; }
-}
 
-}
+
+}*/
