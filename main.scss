@@ -84,6 +84,7 @@ form { padding-right: 30px; }
 		li {
 			padding-right: 40px;
 			display: inline;
+			border: none;
 			a {
 				text-decoration: none;
 				.mobileNav {
@@ -92,7 +93,6 @@ form { padding-right: 30px; }
 					padding: 10px;
 				}
 			}
-			&.divider { display: none; }
 		}
 	}
 }
