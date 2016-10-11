@@ -28,7 +28,12 @@ li {
 
 form { padding-right: 30px; }
 
-.logo { flex-grow: 1; }
+.logo { 
+	background: transparent no-repeat left top;
+	background-image: url(http://static.ucsc.edu/_responsive/images/logos/ucsc-logotype.svg);
+	background-size: contain;
+	flex-grow: 1; 
+}
 
 .icon { 
 	display: none;
