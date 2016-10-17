@@ -26,8 +26,14 @@ body {
 	.icon { display: none; }
 	.inner {
 		display: flex;
-		align-items: center;	
-	}	
+		align-items: center;
+		.right { 
+			display: flex;
+			width: 80%;
+			align-items: center;
+			justify-content: flex-end;
+		}
+	}
 }
 
 @media screen and (min-width: 300px){
@@ -42,6 +48,7 @@ body {
 
 		input { font-size: 17px; }
 		ul.menuNav li { display: none; }
+		form { padding-right: 45px;}
 
 		.logo { 
 			background: transparent no-repeat left top;
@@ -63,6 +70,7 @@ body {
 		ul.menuNav.responsive {	
 			position: absolute;
 			top: 65px;
+			width: 100%;
 			li {
 				padding-right: 40px;
 				display: inline;
@@ -83,26 +91,20 @@ body {
 
 @media screen and (min-width: 580px) {
 	.omnibar {
+		.logo { width: 100%; }
+
 		li, input {
 			font-family: Arial;
 			font-size: 17px;
 		}
-		.logo { width: 100%; }
 		ul.menuNav.responsive { top: 90px; }
 	}
 }
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 875px) {
 	.omnibar {
 		ul { display: inherit; }
 		.icon { display: none; }
-
-		.right { 
-			display: flex;
-			width: 80%;
-			align-items: center;
-			justify-content: flex-end;
-		}
 
 		ul.menuNav li {
 			display: inline;
