@@ -32,10 +32,7 @@ body {
 
 @media screen and (min-width: 300px){
 	.omnibar {
-		ul { 
-			list-style-type: none; 
-			/*padding-left: 175px;*/
-		}
+		ul { list-style-type: none; }
 		
 		li {
 			font-family: Arial;
@@ -54,6 +51,7 @@ body {
 			width: 35%;
 			height: 70px;
 			flex-grow: 1; 
+			padding-right: 0px;
 		}
 
 		.icon { 
@@ -94,10 +92,17 @@ body {
 	}
 }
 
-@media screen and (min-width: 875px) {
+@media screen and (min-width: 870px) {
 	.omnibar {
-		.logo { padding-right: 175px; }
 		ul { display: inherit; }
+		.icon { display: none; }
+
+		.right { 
+			display: flex;
+			width: 80%;
+			align-items: center;
+			justify-content: flex-end;
+		}
 
 		ul.menuNav li {
 			display: inline;
@@ -106,8 +111,11 @@ body {
 			border-right: 3px solid black;
 		}
 
-		ul.menuNav li:last-child { border: none;}
-		form { padding-right: 30px; }
-		.icon { display: none; }
+		ul.menuNav li:first-child { padding-left: 0px; }
+
+		ul.menuNav li:last-child { 
+			border: none;
+			padding-right: 20px;
+		}
 	}
 }

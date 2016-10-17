@@ -14,26 +14,26 @@
 
       <a href="http://www.ucsc.edu/" class="logo"></a>      
       <a onclick="expand()" class="icon">☰</a>
-      
-      <ul id="menuItems" class="menuNav">
-        <li>
-          <a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG" class="right" ><div class="mobileNav">MyUCSC</div></a>
-        </li>
-        <li>
-          <a href="http://www.ucsc.edu/tools/people.html" class="right"><div class="mobileNav">People</div></a>
-        </li>
-        <li>
-          <a href="http://www.ucsc.edu/tools/calendars.html" class="right"><div class="mobileNav">Calendars</div></a>
-        </li>
-        <li>
-          <a href="http://www.ucsc.edu/tools/azindex.html" class="right"><div class="mobileNav">A-Z Index</div></a>
-        </li>
-      </ul>
-      
-      <form id="search" class="right" onSubmit="subButton(this.input.value)">
-        <input type="text" maxlength="120" name="input" placeholder="Search UCSC" id="searchText" onKeyUp="checkSubmit()">
-      </form>
-    
+      <div class="right">
+          <ul id="menuItems" class="menuNav">
+            <li>
+              <a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG"><div class="mobileNav">MyUCSC</div></a>
+            </li>
+            <li>
+              <a href="http://www.ucsc.edu/tools/people.html"><div class="mobileNav">People</div></a>
+            </li>
+            <li>
+              <a href="http://www.ucsc.edu/tools/calendars.html"><div class="mobileNav">Calendars</div></a>
+            </li>
+            <li>
+              <a href="http://www.ucsc.edu/tools/azindex.html"><div class="mobileNav">A-Z Index</div></a>
+            </li>
+          </ul>
+          
+          <form id="search" onSubmit="subButton(this.input.value)">
+            <input type="text" maxlength="120" name="input" placeholder="Search UCSC" id="searchText" onKeyUp="checkSubmit()">
+          </form>
+      </div>
     </div><!-- /.inner -->
   </div><!-- /.omnibar -->
 
