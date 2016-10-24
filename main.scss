@@ -1,80 +1,124 @@
-.inner {
-	display: flex;
-	align-items: center;
-	border-bottom: 3px solid black;
+/*Styles for preview page*/
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.main-content {
+	max-width: 1024px;
+	margin: 1em auto;
+	padding: 1em .5em;
+}
+
+/* Omnibar styles*/
+.omnibar {
+	background-color: #ededed;
+	border-bottom: 2px solid #545454;
+	width: 100%;
+	padding: 1em .5em;
 	max-width: 64em;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-a { color: #00458c; }
-
-li, input {
-  font-family: Arial;
-  font-size: 17px;
-}
-
-.divider { 
-	font-weight: bold; 
-	font-size: 20px;
-}
-
-ul { list-style-type: none; }
-
-li {
-	display: inline;
-	padding-right: 15px;
-}
-
-form { padding-right: 30px; }
-
-.logo { flex-grow: 1; }
-
-.icon { 
-	display: none;
-	font-size: 30px; 
-	position: absolute;
-	right: 5px;
-}
-
-.mobileNav { display: inline; }
-
-@media screen and (max-width: 940px){
-	img {
-		max-height: 70px;
-		height: auto;
-	}
-	.icon { display: block; }
-	ul.menuNav li { display: none; }
-	ul.menuNav.responsive {	
-		position: absolute;
-		top: 85px;
-		li {
-			padding-right: 40px;
-			display: inline;
-			a {
-				text-decoration: none;
-				.mobileNav {
-					border: 2px solid black;
-					border-radius: 7px;
-					padding: 10px;
-				}
-			}
-			&.divider { display: none; }
+	a { color: #00458c; }
+	.icon { display: none; }
+	.inner {
+		display: flex;
+		align-items: center;
+		.right { 
+			display: flex;
+			width: 80%;
+			align-items: center;
+			justify-content: flex-end;
 		}
 	}
 }
 
-@media screen and (max-width: 550px){
-	li {
-		font-size: 0.5em;
-		font-weight: bold;
+@media screen and (min-width: 300px){
+	.omnibar {
+		ul { list-style-type: none; }
+		
+		li {
+			font-family: Arial;
+			font-size: 0.5em;
+			font-weight: bold;
+		}
+
+		input { font-size: 17px; }
+		ul.menuNav li { display: none; }
+		form { padding-right: 45px;}
+
+		.logo { 
+			background: transparent no-repeat left top;
+			background-image: url(http://static.ucsc.edu/_responsive/images/logos/ucsc-logotype.svg);
+			background-size: contain;
+			max-width: 260px;
+			width: 50%;
+			height: 70px;
+			flex-grow: 1; 
+			padding-right: 0px;
+		}
+
+		.icon { 
+			display: block; 
+			font-size: 30px; 
+			position: absolute;
+			right: 5px;
+		}
+		ul.menuNav.responsive {	
+			position: absolute;
+			top: 65px;
+			width: 100%;
+			li {
+				padding-right: 40px;
+				display: inline;
+				border: none;
+				a {
+					text-decoration: none;
+					.mobileNav {
+						display: inline;
+						border: 2px solid black;
+						border-radius: 7px;
+						padding: 10px;
+					}
+				}
+			}
+		}
 	}
-	input {
-		position: absolute;
-		right: 35px;
-		top: 20px;
+}
+
+@media screen and (min-width: 580px) {
+	.omnibar {
+		.logo { width: 100%; }
+
+		li, input {
+			font-family: Arial;
+			font-size: 17px;
+		}
+		ul.menuNav.responsive { top: 90px; }
 	}
-	img { width: 35%; }
-	ul.menuNav.responsive { top: 65px; }
+}
+
+@media screen and (min-width: 875px) {
+	.omnibar {
+		ul { display: inherit; }
+		.icon { display: none; }
+		form { padding-right: 0px; }
+
+		ul.menuNav li {
+			display: inline;
+			padding-right: 8px;
+			padding-left: 8px;
+			border-right: 3px solid black;
+		}
+
+		ul.menuNav li:first-child { padding-left: 0px; }
+
+		ul.menuNav li:last-child { 
+			border: none;
+			padding-right: 20px;
+		}
+	}
 }

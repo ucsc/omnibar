@@ -17,7 +17,12 @@ function expand() {
 	var nav = document.getElementById("menuItems");
 	if (nav.className === "menuNav") {
 		nav.className += " responsive";
-		inner.style.paddingBottom = "55px";
+		if (window.outerWidth < 875 && window.outerWidth > 580) {
+			inner.style.paddingBottom = "55px";
+		}
+		if (window.outerWidth < 580) {
+			inner.style.paddingBottom = "15px";
+		}
 	} else {
 		nav.className = "menuNav";
 		inner.style.paddingBottom = "0px";
@@ -28,11 +33,14 @@ function expand() {
 function checkPadding() {
 	var inner = document.getElementById("inner");
 	var nav = document.getElementById("menuItems");
-	if (window.outerWidth > 940) {
+	if (window.outerWidth > 875) {
 		inner.style.paddingBottom = "0px";
-	} else if (window.outerWidth < 940) {
-		if (nav.className === "menuNav responsive") {
+		nav.className = "menuNav";
+	} else if (window.outerWidth < 875) {
+		if (nav.className === "menuNav responsive" && window.outerWidth > 580) {
 			inner.style.paddingBottom = "55px"
+		} else if (nav.className === "menuNav responsive" && window.outerWidth < 580) {
+			inner.style.paddingBottom == "15px";
 		} else {
 			inner.style.paddingBottom = "0px";
 		}
