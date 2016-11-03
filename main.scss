@@ -48,17 +48,19 @@ body {
 
 		input { font-size: 17px; }
 		ul.menuNav li { display: none; }
-		form { padding-right: 45px;}
+		form { 
+			position: absolute;
+			right: 32px;
+		}
 
 		.logo { 
 			background: transparent no-repeat left top;
 			background-image: url(http://static.ucsc.edu/_responsive/images/logos/ucsc-logotype.svg);
 			background-size: contain;
 			max-width: 260px;
+			min-width: 147px;
+			min-height: 70px;
 			width: 50%;
-			height: 70px;
-			flex-grow: 1; 
-			padding-right: 0px;
 		}
 
 		.icon { 
@@ -97,6 +99,7 @@ body {
 			font-family: Arial;
 			font-size: 17px;
 		}
+
 		ul.menuNav.responsive { top: 90px; }
 	}
 }
@@ -105,7 +108,11 @@ body {
 	.omnibar {
 		ul { display: inherit; }
 		.icon { display: none; }
-		form { padding-right: 0px; }
+
+		form { 
+			position: static;
+			padding-right: 15px; 
+		}
 
 		ul.menuNav li {
 			display: inline;
