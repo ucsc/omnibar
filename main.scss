@@ -19,13 +19,15 @@ body {
 	border-bottom: 2px solid #545454;
 	width: 100%;
 	padding: 1em .5em;
-	max-width: 64em;
 	margin-left: auto;
 	margin-right: auto;
 	a { color: #00458c; }
-	.icon { display: none; }
+	/*.icon { display: none; }*/
 	.inner {
+		max-width: 64em;
 		display: flex;
+		margin-right: auto;
+		margin-left: auto;
 		align-items: center;
 		.right { 
 			display: flex;
@@ -38,19 +40,20 @@ body {
 
 @media screen and (min-width: 300px){
 	.omnibar {
-		ul { list-style-type: none; }
-		
-		li {
-			font-family: Arial;
-			font-size: 0.5em;
-			font-weight: bold;
-		}
-
+		/*commented out styles are for the icon and hiding list items in mobile*/
+		/*ul.menuNav li { display: none; }
+		.icon { 
+			display: block; 
+			font-size: 30px; 
+			position: absolute;
+			right: 5px;
+		}*/
 		input { font-size: 17px; }
-		ul.menuNav li { display: none; }
+		.inner { padding-bottom: 35px; }
+		
 		form { 
 			position: absolute;
-			right: 32px;
+			top: 32px;
 		}
 
 		.logo { 
@@ -63,24 +66,20 @@ body {
 			width: 50%;
 		}
 
-		.icon { 
-			display: block; 
-			font-size: 30px; 
-			position: absolute;
-			right: 5px;
-		}
-		ul.menuNav.responsive {	
+		ul.menuNav {	
+			list-style-type: none; 
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
 			position: absolute;
 			top: 65px;
 			width: 100%;
 			li {
-				padding-right: 40px;
-				display: inline;
 				border: none;
+				font-family: Arial;
 				a {
 					text-decoration: none;
 					.mobileNav {
-						display: inline;
 						border: 2px solid black;
 						border-radius: 7px;
 						padding: 10px;
@@ -100,14 +99,14 @@ body {
 			font-size: 17px;
 		}
 
-		ul.menuNav.responsive { top: 90px; }
+		ul.menuNav { top: 90px; }
 	}
 }
 
 @media screen and (min-width: 875px) {
 	.omnibar {
 		ul { display: inherit; }
-		.icon { display: none; }
+		/*.icon { display: none; }*/
 
 		form { 
 			position: static;

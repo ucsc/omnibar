@@ -30,19 +30,19 @@ function expand() {
 }
 
 // When window resizes, check to see if extra padding is still on the bottom of the omnibar
-function checkPadding() {
-	var inner = document.getElementById("inner");
-	var nav = document.getElementById("menuItems");
-	if (window.outerWidth > 875) {
-		inner.style.paddingBottom = "0px";
-		nav.className = "menuNav";
-	} else if (window.outerWidth < 875) {
-		if (nav.className === "menuNav responsive" && window.outerWidth > 580) {
-			inner.style.paddingBottom = "55px"
-		} else if (nav.className === "menuNav responsive" && window.outerWidth < 580) {
-			inner.style.paddingBottom == "15px";
-		} else {
-			inner.style.paddingBottom = "0px";
-		}
-	}
-}
+// function checkPadding() {
+// 	var inner = document.getElementById("inner");
+// 	var nav = document.getElementById("menuItems");
+// 	if (window.outerWidth > 875) {
+// 		inner.style.paddingBottom = "0px";
+// 		nav.className = "menuNav";
+// 	} else if (window.outerWidth < 875) {
+// 		if (nav.className === "menuNav responsive" && window.outerWidth > 580) {
+// 			inner.style.paddingBottom = "55px"
+// 		} else if (nav.className === "menuNav responsive" && window.outerWidth < 580) {
+// 			inner.style.paddingBottom == "15px";
+// 		} else {
+// 			inner.style.paddingBottom = "0px";
+// 		}
+// 	}
+// }
