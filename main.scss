@@ -21,6 +21,7 @@ body {
 	padding: 1em .5em;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 	a { color: #00458c; }
 	/*.icon { display: none; }*/
 	.inner {
@@ -64,6 +65,9 @@ body {
 			min-width: 147px;
 			min-height: 70px;
 			width: 50%;
+			text-indent: 100%;
+    		white-space: nowrap;
+    		overflow: hidden;
 		}
 
 		ul.menuNav {	
@@ -102,12 +106,12 @@ body {
 	.omnibar {
 		/*ul { display: inherit; }*/
 		/*.icon { display: none; }*/
+		.inner { padding-bottom: 0px; }
 		ul.menuNav {
 			padding-top: 0px;
 			justify-content: flex-end;
-			position: absolute;
+			position: static;
 			top: 25px;
-			right: 190px;
 		}
 
 		form { 
