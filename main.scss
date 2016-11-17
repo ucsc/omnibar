@@ -100,8 +100,15 @@ body {
 
 @media screen and (min-width: 875px) {
 	.omnibar {
-		ul { display: inherit; }
+		/*ul { display: inherit; }*/
 		/*.icon { display: none; }*/
+		ul.menuNav {
+			padding-top: 0px;
+			justify-content: flex-end;
+			position: absolute;
+			top: 25px;
+			right: 190px;
+		}
 
 		form { 
 			position: static;
@@ -120,6 +127,12 @@ body {
 		ul.menuNav li:last-child { 
 			border: none;
 			padding-right: 20px;
+		}
+
+		ul.menuNav li a .mobileNav { 
+			border: none; 
+			border-radius: 0px;
+			padding: 0px;
 		}
 	}
 }
