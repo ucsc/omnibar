@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width"/>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script src="main.js"></script>
+  <!-- // <script src="main.js"></script> -->
 </head>
 <body>
   
@@ -30,8 +30,9 @@
             </li>
           </ul>
           
-          <form id="search" action="http://www.google.com/search?q=">
-            <input type="text" maxlength="120" name="input" placeholder="Search UCSC" id="searchText">
+          <form id="search" action="http://www.google.com/search?" method="get">
+            <input type="hidden" name="sitesearch" value="ucsc.edu" />
+            <input type="text" maxlength="120" name="q" placeholder="Search UCSC" id="searchText">
           </form>
       </div>
     </div><!-- /.inner -->
