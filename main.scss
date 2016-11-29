@@ -22,7 +22,6 @@ body {
 	margin-right: auto;
 	display: block;
 	a { color: #00458c; }
-	/*.icon { display: none; }*/
 	.inner {
 		max-width: 64em;
 		min-width: 300px;
@@ -36,8 +35,56 @@ body {
 			align-items: center;
 			justify-content: flex-end;
 		}
+
+		input[type=checkbox] {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+		label { 
+			display:none;
+			cursor: pointer;
+			user-select:none;
+		}
 	}
 }
+
+/*advanced checkbox hack*/
+/*body { -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }*/
+
+nav[role="custom-dropdown"] {
+	ul.menuNav {
+		padding-top: 0px;
+		justify-content: flex-end;
+		position: static;
+		top: 25px;
+	}
+
+	ul.menuNav li {
+		display: inline;
+		padding-right: 8px;
+		padding-left: 8px;
+		border-right: 3px solid black;
+	}
+
+	ul.menuNav li:first-child { padding-left: 0px; }
+
+	ul.menuNav li:last-child { 
+		border: none;
+		padding-right: 20px;
+	}
+
+	ul.menuNav li a .mobileNav { 
+		border: none; 
+		border-radius: 0px;
+		padding: 0px;
+	}
+}
+
+
+
 
 @media screen and (min-width: 300px){
 	.omnibar {
@@ -124,39 +171,11 @@ body {
 
 @media screen and (min-width: 875px) {
 	.omnibar {
-		/*ul { display: inherit; }*/
-		/*.icon { display: none; }*/
 		.inner { padding-bottom: 0px; }
-		ul.menuNav {
-			padding-top: 0px;
-			justify-content: flex-end;
-			position: static;
-			top: 25px;
-		}
 
 		form { 
 			position: static;
 			padding-right: 15px; 
-		}
-
-		ul.menuNav li {
-			display: inline;
-			padding-right: 8px;
-			padding-left: 8px;
-			border-right: 3px solid black;
-		}
-
-		ul.menuNav li:first-child { padding-left: 0px; }
-
-		ul.menuNav li:last-child { 
-			border: none;
-			padding-right: 20px;
-		}
-
-		ul.menuNav li a .mobileNav { 
-			border: none; 
-			border-radius: 0px;
-			padding: 0px;
 		}
 	}
 }
