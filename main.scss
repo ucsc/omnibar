@@ -94,26 +94,6 @@ body {
 	}
 }
 
-@-moz-document url-prefix() {
-	.right { display: block; }
-	form { right: 0px; }
-
-    ul.menuNav {
-    	left: 0px;
-    	padding-left: 0px;
-    }
-}
-
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
-    .right { display: block; }
-	form { right: 0px; }
-
-    ul.menuNav {
-    	left: 0px;
-    	padding-left: 0px;
-    }
-}
-
 @media screen and (min-width: 580px) {
 	.omnibar {
 		.inner { padding-bottom: 50px; }
@@ -159,4 +139,25 @@ body {
 			padding: 0px;
 		}
 	}
+}
+
+/*Firefox and Safari specific styles to make mobile navigation work*/
+@-moz-document url-prefix() {
+	.right { display: block; }
+	form { right: 0px; }
+
+    ul.menuNav {
+    	left: 0px;
+    	padding-left: 0px;
+    }
+}
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+    .right { display: block; }
+	form { right: 0px; }
+
+    ul.menuNav {
+    	left: 0px;
+    	padding-left: 0px;
+    }
 }
