@@ -4,41 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width"/>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- // <script src="main.js"></script> -->
 </head>
 <body>
-    <div class="omnibar">
-        <div class="inner" id="inner">
+  
+  <div class="omnibar">
+  
+    <div class="inner" id="inner">
 
-            <a href="http://www.ucsc.edu/" class="logo">UC Santa Cruz</a>      
-            <div class="right">
-                
-                <nav role="custom-dropdown">
-                    <input type="checkbox" id="button">
-                    <label for="button" onclick></label>
-
-                    <ul id="menuItems" class="menuNav">
-                        <li>
-                          <a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG"><div class="mobileNav">MyUCSC</div></a>
-                        </li>
-                        <li>
-                          <a href="http://www.ucsc.edu/tools/people.html"><div class="mobileNav">People</div></a>
-                        </li>
-                        <li>
-                          <a href="http://www.ucsc.edu/tools/calendars.html"><div class="mobileNav">Calendars</div></a>
-                        </li>
-                        <li>
-                          <a href="http://www.ucsc.edu/tools/azindex.html"><div class="mobileNav">A-Z Index</div></a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <form id="search" action="http://www.google.com/search?" method="get">
-                    <input type="hidden" name="sitesearch" value="ucsc.edu" />
-                    <input type="text" maxlength="120" name="q" placeholder="Search UCSC" id="searchText">
-                </form>
-            </div>
-        </div><!-- /.inner -->
-    </div><!-- /.omnibar -->
+      <a href="http://www.ucsc.edu/" class="logo">UC Santa Cruz</a>      
+      <!-- <a onclick="expand()" class="icon">☰</a> -->
+      <div class="right">
+          <ul id="menuItems" class="menuNav">
+            <li>
+              <a href="https://my.ucsc.edu/psp/ep9prd/?cmd=login&languageCd=ENG"><div class="mobileNav">MyUCSC</div></a>
+            </li>
+            <li>
+              <a href="http://www.ucsc.edu/tools/people.html"><div class="mobileNav">People</div></a>
+            </li>
+            <li>
+              <a href="http://www.ucsc.edu/tools/calendars.html"><div class="mobileNav">Calendars</div></a>
+            </li>
+            <li>
+              <a href="http://www.ucsc.edu/tools/azindex.html"><div class="mobileNav">A-Z Index</div></a>
+            </li>
+          </ul>
+          
+          <form id="search" action="http://www.google.com/search?" method="get">
+            <input type="hidden" name="sitesearch" value="ucsc.edu" />
+            <input type="text" maxlength="120" name="q" placeholder="Search UCSC" id="searchText">
+          </form>
+      </div>
+    </div><!-- /.inner -->
+  </div><!-- /.omnibar -->
 
 
   <div class="main-content">
